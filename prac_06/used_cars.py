@@ -15,9 +15,16 @@ def main():
     print("Car {}, {}".format(my_car.fuel, my_car.odometer))
     print("Car {self.fuel}, {self.odometer}".format(self=my_car))
 
-    limo = Car(100)
-    print("fuel =", limo.fuel)
-    limo = Car.add_fuel(limo, 20)
+    print('next car')
+
+    my_limo = Car(0)
+    my_limo.limo()
+    my_limo.add_fuel(20)
+    print("fuel =", my_limo.fuel)
+    my_limo.drive(115)
+    print('Odometer =', my_limo.odometer)
+
+    print(my_limo)
 
 
 main()
