@@ -7,3 +7,6 @@ class ProgrammingLanguage:
     def is_dynamic(self):
         self.typing
 
+
+def main():
+    print("enter something")
